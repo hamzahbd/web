@@ -22,7 +22,7 @@
 	</center>
 </td>
 </tr>
-<tr style="vertical-align:top">
+<tr>
 <td height="605px" width="250px">
 		<ul> List Kategori Training<hr>
 			<li><a href="cloud.html" style="text-decoration:none;">Cloud</a></li>
@@ -31,51 +31,28 @@
 </td>
 <td height="740px" width="500px">
 	<center>
+		<h3>Pendaftaran Training</h3>
+	<form action="php/registrasi.php" method="post">	
 	<table border="0" width="100%" height="100%">
-		<tr>
-			<td>
-				<a href="openstack.html"><img src="image/openstack.jpg" height="180px" width="210px"></a>
-			</td>
-
-			<td>	
-				<a href="docker.html"><img src="image/docker.jpg" height="180px" width="210px"></a>
-			</td>
-		</tr>
-		<tr>
-			<td style="height: 20px">
-				<a href="openstack.html" style="text-decoration:none; color: black">Openstack</a>
-			</td>
-			<td>
-				<a href="docker.html" style="text-decoration:none; color: black">Docker</a>
-			</td>
-		</tr>
-		<tr>
-			<td style="height: 100px"><center><marquee width="60%" direction="left" height="100px">Rp. 2.500.000</marquee></center></td><td><center><marquee width="60%" direction="left" height="100px">1.800.000</marquee></center></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="gitlab.html"><img src="image/gitlab.jpg" height="180px" width="210px"></a>
-			</td>
-			<td>
-				<a href="azure.html"><img src="image/azure.jpg" height="180px" width="210px"></a>
-			</td>
-		</tr>
-		<tr>
-			<td style="height: 20px">
-			<a href="gitlab.html" style="text-decoration:none; color: black">Gitlab</a>
-			</td>
-			<td>
-			<a href="azure.html" style="text-decoration:none; color: black">Microsoft Azure</a>
-			</td>
-		</tr>
-		<tr><marquee>
-			<td style="height: 100px"><center><marquee width="60%" direction="left" height="100px">Rp. 1.600.000</marquee></center></td><td><center><marquee width="60%" direction="left" height="100px">Rp. 2.300.000</marquee></center></td>
-		</marquee>
-		</tr>
+		<tr><td>Nama Depan<td>: <input type="text" name="depan" size="30"></tr>
+		<tr><td>Nama Belakang <td>: <input type="text" name="belakang" size="20"></tr>
+		<tr><td>Linkedin <td>: <input type="text" name="linkedin" size="20"></tr>
+		<tr><td>E-Mail <td>: <input type="text" name="email" size="30">
+		<tr><td>Jenis Kelamin<td>:<input type="radio" name="kelamin" value="Pria">pria
+		<input type="radio" name="kelamin" value="wanita">wanita</tr>
+		<tr><td>Jenis Training<td>: <select size="1" name="training">
+		<option>Openstack</option>
+		<option>Docker</option>
+		<option>Gitlab</option>
+		<option>Microsoft Azure</option>
+		</select></td></td></tr>
+		<tr><td>Keterangan <td>: <textarea name="keterangan" cols="40" rows="5"></textarea></td></td></tr>
+<td><input type="submit" value="Kirim"></td>
+<td><input type="reset" value="Reset"></td>
 	</table>
 	</center>
 </td>
-<td height="1px" width="250px">
+<td height="605px" width="250px">
 	<center>
 		<audio controls autoplay>
   			<source src="audio/music.mp3" type="audio/mpeg">
